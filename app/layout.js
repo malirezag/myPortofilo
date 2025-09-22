@@ -1,15 +1,20 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "@/app/_style/globals.css";
+import "./_style/globals.css";
 import Header from "./_components/Header";
+import Baloo_Bhaijaan_2 from "next/font/local";
+import Footer from "./_components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const baloo = Baloo_Bhaijaan_2({
+  // subsets: ["arabic"],
+  // weight: ["400", "500", "600", "700", "800"],
+  // display: "swap",
+  src: [
+    {
+      path: "../public/fonts/BalooBhaijaan2-Medium.ttf",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  display: "swap",
 });
 
 export const metadata = {
@@ -23,9 +28,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="max-w-350 px-5 mx-auto bg-zinc-950">
-        <Header />
-        {children}
+      <body className={` bg-black ${baloo.className}`}>
+        <div className="max-w-320 px-5 mx-auto">
+          <Header />
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );

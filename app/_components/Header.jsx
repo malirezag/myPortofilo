@@ -1,13 +1,18 @@
 import { HiMenuAlt1 } from "react-icons/hi";
-import Logo from "@/public/Logo.png";
-import Image from "next/image";
+import HiremeButton from "./HiremeButton";
+import LogoPath from "./LogoPath";
+import HeaderItems from "./HeaderItems";
 
 function Header() {
   return (
-    <div className="flex flex-row justify-between items-center py-4">
-      <HiMenuAlt1 className="text-4xl text-gray-100" />
-      {/* <HiremeButton /> */}
-      <Image src={Logo} height={50} width={50} alt="logo" />
+    <div className="flex md:block flex-row justify-between  items-center py-4 md:py-7">
+      <HiMenuAlt1 className="text-4xl text-gray-100 md:hidden" />
+      <div className="hidden md:flex md:flex-row md:items-center justify-between">
+        <HiremeButton />
+        <HeaderItems />
+        <LogoPath />
+      </div>{" "}
+      <LogoPath className="md:hidden" />
     </div>
   );
 }

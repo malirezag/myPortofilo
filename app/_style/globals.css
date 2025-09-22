@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+button:hover {
+  cursor: pointer;
+}
+/* Chrome / Safari / Edge */
+textarea:-webkit-autofill,
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #18181b inset; /* همون bg-zinc-900 */
+  -webkit-text-fill-color: #e4e4e7; /* همون text-zinc-200 */
+  transition: background-color 5000s ease-in-out 0s; /* جلوگیری از فلش زرد */
+  caret-color: #e4e4e7; /* رنگ مکان‌نما */
+}
+
+textarea:-webkit-autofill:focus,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset; /* focus:bg-black */
+  -webkit-text-fill-color: #fff; /* متن سفید تو حالت فوکوس */
+  caret-color: #fff;
+  outline: 0.09rem solid #f97316;
+}
+
+/* Firefox */
+textarea:-moz-autofill,
+input:-moz-autofill {
+  box-shadow: 0 0 0px 1000px #18181b inset;
+  -moz-text-fill-color: #e4e4e7;
+  caret-color: #e4e4e7;
+}
