@@ -52,7 +52,7 @@ function Homebanner() {
         </div>
       </div>
 
-      <div className="relative mx-auto sm:h-[75vh] h-[40vh] sm:max-w-100 max-w-70 md:flex-1 ">
+      <div className="relative mx-auto sm:h-[75vh] h-[48vh] sm:max-w-100 max-w-70 md:flex-1 ">
         <Image src={photo} alt="my image" fill className=" rounded-xl" />
       </div>
     </div>
