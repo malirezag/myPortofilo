@@ -1,5 +1,7 @@
 import photo1 from "../_assest/doctor.jpg";
 import photo2 from "../_assest/shop.jpg";
+import photo3 from "../_assest/awfirm.jpg";
+import photo4 from "../_assest/law2.jpg";
 import ProjectCard from "../_components/ProjectCard";
 
 const projects = [
@@ -16,10 +18,16 @@ const projects = [
     href: "https://doctorrr-appointment.vercel.app/",
   },
   {
-    image: photo2,
+    image: photo3,
     name: "موسسه حقوقی",
     category: "وبسایت",
     href: "https://lawfirm-iota.vercel.app/",
+  },
+  {
+    image: photo4,
+    name: "موسسه حقوقی ماندگار",
+    category: "وبسایت",
+    href: "https://andishmandan-law-firm.vercel.app/",
   },
   {
     image: photo2,
