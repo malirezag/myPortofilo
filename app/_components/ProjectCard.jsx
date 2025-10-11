@@ -5,7 +5,7 @@ function ProjectCard({ name, href, image, category }) {
   return (
     <Link
       href={href}
-      className="size-60"
+      className="size-65"
       target="_blank"
       rel="noopener noreferrer"
     >

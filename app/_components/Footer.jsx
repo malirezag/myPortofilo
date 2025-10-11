@@ -35,18 +35,24 @@ function Footer() {
       </ul>
       <ContactButtons />
 
-      <p className="flex flex-row text-gray-400 items-center text-xl gap-2">
+      <Link
+        href="mailto:malirezag@gmail.com"
+        className="flex flex-row text-gray-400 items-center text-xl gap-2"
+      >
         <span className="text-2xl">
           <CiMail />
         </span>
         malirezag@gmail.com
-      </p>
-      <p className="flex flex-row text-gray-400 items-center text-xl gap-2">
+      </Link>
+      <Link
+        href="tel:09120358337"
+        className="flex flex-row text-gray-400 items-center text-xl gap-2"
+      >
         <span className="text-2xl">
           <CiPhone />
         </span>
         0912-035-8337
-      </p>
+      </Link>
 
       <p className="text-gray-400 py-4 mt-5 px-10 border-t border-gray-400 text-center mx-2">
         Developed by{" "}

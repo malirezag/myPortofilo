@@ -2,6 +2,7 @@ import photo1 from "../_assest/doctor.jpg";
 import photo2 from "../_assest/shop.jpg";
 import photo3 from "../_assest/awfirm.jpg";
 import photo4 from "../_assest/law2.jpg";
+import photo5 from "../_assest/hotel.png";
 import ProjectCard from "../_components/ProjectCard";
 
 const projects = [
@@ -30,10 +31,10 @@ const projects = [
     href: "https://andishmandan-law-firm.vercel.app/",
   },
   {
-    image: photo2,
+    image: photo5,
     name: "هتل",
     category: "وبسایت",
-    href: "https://hotel-psi.vercel.app/",
+    href: "https://wild-oasis-website-ddd.vercel.app/",
   },
 ];
 
