@@ -1,6 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { HiMenuAlt1 } from "react-icons/hi";
 import HeaderItems from "./HeaderItems";
 import HiremeButton from "./HiremeButton";
@@ -14,6 +14,7 @@ function Header() {
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
