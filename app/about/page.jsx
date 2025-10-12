@@ -1,5 +1,5 @@
 import Image from "next/image";
-import photo from "../_assest/Photo.png";
+import photo from "../_assest/about.svg";
 import { FaJsSquare, FaReact } from "react-icons/fa";
 import { ImHtmlFive2 } from "react-icons/im";
 import { RiCss3Line, RiTailwindCssFill } from "react-icons/ri";
@@ -28,12 +28,12 @@ function page() {
           {" "}
           برنامه نویس و توسعه دهنده فرانت اند حوزه وب{" "}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-5">
+        <div className="grid grid-cols-1 md:grid-cols-5 my-15 sm:my-25  ">
           <Image
             alt="my photo"
             src={photo}
-            className="col-span-2 max-w-75 mx-auto"
-          />{" "}
+            className="col-span-2 max-w-85 sm:max-w-90 mx-auto my-auto"
+          />
           <p className="text-sm/8 text-end my-10 md:col-span-3 md:my-auto lg:mx-10 md:ml-19 lg:text-base ">
             سلام، من علیرضا فلاح حسینی هستم، فرانت‌اند دولوپر با تمرکز بر توسعه
             وب مدرن و پیاده‌سازی رابط‌های کاربری پیچیده و واکنش‌گرا. تجربه‌ی کار

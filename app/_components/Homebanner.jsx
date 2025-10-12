@@ -1,6 +1,6 @@
 import HiremeButton from "./HiremeButton";
 import Image from "next/image";
-import photo from "../_assest/Photo.png";
+import photo from "../_assest/photo.svg";
 import ContactButtons from "./ContactButtons";
 import Link from "next/link";
 
