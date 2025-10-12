@@ -25,7 +25,7 @@ const Items = [
 function HeaderItems() {
   const pathname = usePathname();
   return (
-    <ul className="flex sm:flex-row flex-col sm:gap-20 gap-10 py-10 items-center sm:items-start sm:py-0">
+    <ul className="flex md:flex-row flex-col md:gap-20 gap-10 py-10 items-center md:items-start md:py-0">
       {Items.map((item) => (
         <li
           className={`text-gray-300 text-xl text-nowrap  ${
