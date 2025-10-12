@@ -7,30 +7,35 @@ import ProjectCard from "../_components/ProjectCard";
 
 const projects = [
   {
+    isDeveloping: false,
     image: photo2,
     name: "آنلاین شاپ",
     category: "وبسایت",
     href: "https://online-shop-blue-nu.vercel.app/",
   },
   {
+    isDeveloping: false,
     image: photo1,
     name: "نوبت دهی مطب",
     category: "وبسایت",
     href: "https://doctorrr-appointment.vercel.app/",
   },
   {
+    isDeveloping: false,
     image: photo3,
     name: "موسسه حقوقی",
     category: "وبسایت",
     href: "https://lawfirm-iota.vercel.app/",
   },
   {
+    isDeveloping: true,
     image: photo4,
     name: "موسسه حقوقی ماندگار",
     category: "وبسایت",
     href: "https://andishmandan-law-firm.vercel.app/",
   },
   {
+    isDeveloping: false,
     image: photo5,
     name: "هتل",
     category: "وبسایت",
@@ -50,6 +55,7 @@ function page() {
       <div className="grid grid-cols-1 md:grid-cols-2 place-items-center mb-20 md:mb-30 lg:grid-cols-3 gap-17 md:gap-23 px-3 max-w-280 mx-auto ">
         {projects.map((project) => (
           <ProjectCard
+            isDeveloping={project.isDeveloping}
             image={project.image}
             name={project.name}
             category={project.category}
