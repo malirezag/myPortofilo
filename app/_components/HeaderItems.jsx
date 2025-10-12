@@ -25,10 +25,10 @@ const Items = [
 function HeaderItems() {
   const pathname = usePathname();
   return (
-    <ul className="flex flex-row gap-20">
+    <ul className="flex sm:flex-row flex-col sm:gap-20 gap-10 py-10 items-center sm:items-start sm:py-0">
       {Items.map((item) => (
         <li
-          className={`text-gray-300 text-xl ${
+          className={`text-gray-300 text-xl text-nowrap  ${
             pathname === item.href
               ? "bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent font-bold"
               : ""
