@@ -3,6 +3,7 @@ import photo2 from "../_assest/shop.jpg";
 import photo3 from "../_assest/awfirm.jpg";
 import photo4 from "../_assest/law2.jpg";
 import photo5 from "../_assest/hotel.png";
+import photo6 from "../_assest/blog.png";
 import ProjectCard from "../_components/ProjectCard";
 
 const projects = [
@@ -33,6 +34,13 @@ const projects = [
     name: "موسسه حقوقی ماندگار",
     category: "وبسایت",
     href: "https://andishmandan-law-firm.vercel.app/",
+  },
+  {
+    isDeveloping: true,
+    image: photo5,
+    name: " وبلاگ",
+    category: "وبسایت",
+    href: "https://weblog-liard-two.vercel.app/",
   },
   {
     isDeveloping: false,
