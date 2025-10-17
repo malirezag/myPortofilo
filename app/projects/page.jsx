@@ -37,7 +37,7 @@ const projects = [
   },
   {
     isDeveloping: true,
-    image: photo5,
+    image: photo6,
     name: " وبلاگ",
     category: "وبسایت",
     href: "https://weblog-liard-two.vercel.app/",
